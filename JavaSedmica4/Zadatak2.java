@@ -23,8 +23,9 @@ public class Zadatak2 {
 				min = x;
 			}
 		}
-		System.out.println("minimum je :" + 100);
+		System.out.println("minimum je :" + min);
 		sc.close();
 	}
 
 }
+

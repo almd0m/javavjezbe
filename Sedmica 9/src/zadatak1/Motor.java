@@ -1,0 +1,18 @@
+package zadatak1;
+
+public class Motor extends Vozilo implements Ekonomican {
+
+    public Motor(String id, double maxBrzina) {
+        super(id, maxBrzina);
+    }
+
+    @Override
+    public double izracunajVrijemeDostave(double udaljenostKm) {
+        return udaljenostKm / getMaxBrzina();
+    }
+
+    @Override
+    public double potrosnjaPoKm() {
+        return 0.05; 
+    }
+}
